@@ -36,9 +36,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TestClass.cs" />
+    <Compile Include="dto\OrderDTOSinLista.cs" />
     <Compile Include="dto\OrderDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestService\TestClassServices\TestClassServices.csproj">
+      <Project>{93604407-f361-4000-a89c-13d30a770608}</Project>
+      <Name>TestClassServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

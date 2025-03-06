@@ -58,6 +58,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyInfoWrapper.cs" />
+    <EmbeddedResource Include="FormParametros.resx">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTester.resx">
       <DependentUpon>FrmTester.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +89,10 @@
     <ProjectReference Include="..\LibraryLoader\LibraryLoader.csproj">
       <Project>{344e1037-a153-4ce3-aecf-3c8039d81485}</Project>
       <Name>LibraryLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoggerManager\LoggerManager.csproj">
+      <Project>{0c8d322c-3349-42b4-ab23-aa5ba948fab0}</Project>
+      <Name>LoggerManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

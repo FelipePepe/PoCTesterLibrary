@@ -5,7 +5,7 @@ using TestLibrary.dto;
 
 namespace TestLibrary
 {
-    public class Class1
+    public class TestClass
     {
         public string Method1()
         {
@@ -27,9 +27,24 @@ namespace TestLibrary
             Console.WriteLine("Hello World 4");
         }
 
-        public OrderDTO Method5(OrderDTO dto)
+        public OrderDTOSinLista Method5(OrderDTOSinLista dto)
         {
             return dto;
+        }
+
+        public OrderDTO Method6(OrderDTO dto)
+        {
+            return dto;
+        }
+
+        public String ServiceHello()
+        {
+            String result = string.Empty;
+
+            TestClassServices.Class1 service = new TestClassServices.Class1();
+            result = service.sayHello();
+
+            return result;
         }
     }
 }
